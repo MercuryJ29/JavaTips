@@ -1,0 +1,9 @@
+自己写的其他类（在其他包里面），报错了引用不到文件，很明显不可能引用不到的。
+
+原因：
+idea缓存异常，其中的class文件被删除导致的
+
+解决方法：
+点击File -> Invalidate Caches/Restart ，弹出框点击Invalidate and Restart
+
+点击完成后idea就重启了，并且重新构建了一次索引，此时问题解决。
